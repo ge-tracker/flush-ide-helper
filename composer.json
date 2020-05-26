@@ -1,0 +1,50 @@
+{
+    "name": "ge-tracker/flush-ide-helper",
+    "description": "Flushes barryvdh ide helper files",
+    "keywords": [
+        "ge-tracker",
+        "osrs-api"
+    ],
+    "homepage": "https://github.com/ge-tracker/flush-ide-helper",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "GE Tracker",
+            "email": "james@ge-tracker.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/support": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeTracker\\FlushIdeHelper\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GeTracker\\FlushIdeHelper\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FlushIdeHelperServiceProvider"
+            ]
+        }
+    }
+}
