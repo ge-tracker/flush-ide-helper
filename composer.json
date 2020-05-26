@@ -3,7 +3,8 @@
     "description": "Flushes barryvdh ide helper files",
     "keywords": [
         "ge-tracker",
-        "osrs-api"
+        "laravel",
+        "ide-helper"
     ],
     "homepage": "https://github.com/ge-tracker/flush-ide-helper",
     "license": "MIT",
