@@ -10,11 +10,6 @@ class FlushIdeHelperCommand extends Command
                             {--o|optimise}';
     protected $description = 'Flushes barryvdh/laravel-ide-helper';
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function handle()
     {
         if ($this->option('optimise')) {
